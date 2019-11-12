@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}" lang="es"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Formulario Quejas</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<link rel="icon" href="/image/favicon.png" />
+
+	<!-- Bootstrap core CSS -->
+  	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/webjars/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+	
+	<!-- Custom styles for this template --> 
+	<link href="/css/style.css" rel="stylesheet" />
+
+	
+	
+	
+</head>
+<body>
+	<header th:replace="fragments/header :: cabeza">
+		<div>Header</div>
+	</header>
+	
+	<div class="layout-main">
+		<aside>
+			<nav th:replace="fragments/menu :: menu">
+				<span>Menu</span>
+			</nav>
+		</aside>
+	
+	    <section class="layout-content" layout:fragment="cuerpo">
+			      <div class="fondo-principal">
+					<div class="principal">
+				        <div class="contenedor">
+				      		<div class="caja-login">
+					
+				                    
+					            <form > <!-- th:action="@{/clientes/addCliente}" th:object="${cliente}" method="get"  -->   
+					                <div class="form-row">
+					                    
+					                    <div class="descQue">
+					                        
+					                        <textarea class="form-control-areas" rows="10" cols="50" placeholder="Descripción de la Queja"></textarea>
+<!-- 					                        <input type="text" class="form-control" id="Descripción" placeholder="Descripción de la Petición" maxlength="9" -->
+<!-- 	                               autofocus="autofocus" required="required"/> th:field="*{nit}" th:value="${nit}"  -->
+					                        	
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+				
+					                    <div class="form-group col-md-6">
+					                        <label for="estado">Tipo de Documento</label>
+					                        <select  class="form-control" > <!--  th:field="*{ciudad}"  -->
+					                            <option value="">Selecione...</option>
+					                            <option>C.C</option>   <!-- th:value="Abierto"  th:text="Abierto" --> 
+					                            <option>T.I</option> <!--  th:value="En espera" th:text="En espera" -->
+					                            <option>C.E</option> <!-- th:value="Cerrado" th:text="Cerrado" -->
+					                        </select>
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    <div class="form-group col-md-6">
+					                        <label for="nombre">Numero de Documento</label>
+					                        <input type="text" class="form-control" required="required" /> <!-- th:field="*{razon_social}" th:value="${razon_social}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+					                    <div class="form-group col-md-6">
+					                        <label for="nombre">Nombre</label>
+					                        <input type="text" class="form-control" required="required" /> <!-- th:field="*{razon_social}" th:value="${razon_social}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    <div class="form-group col-md-6">
+					                        <label for="nombre">Apellido</label>
+					                        <input type="text" class="form-control" required="required" /> <!-- th:field="*{razon_social}" th:value="${razon_social}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+					                    <div class="form-group col-md-6">
+					                        <label for="correo1">Correo</label>
+					                        <input type="email" class="form-control" id="correo_enc_uno" /> <!-- th:field="*{correo_enc_uno}" th:value="${correo_enc_uno}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+					                    <div class="form-group col-md-6">
+					                        <label for="nombre">Programa</label>
+					                        <input type="text" class="form-control" required="required" /> <!-- th:field="*{razon_social}" th:value="${razon_social}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+					                    <div class="form-group col-md-6">
+					                        <label for="nombre">N° Telefono Celular</label>
+					                        <input type="text" class="form-control" required="required" /> <!-- th:field="*{razon_social}" th:value="${razon_social}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+					                    					                    
+					                    <div class="form-group col-md-6">
+					                        <label for="nombre">Direccion</label>
+					                        <input type="text" class="form-control" required="required" /> <!-- th:field="*{razon_social}" th:value="${razon_social}" -->
+					                        <div class="invalid-feedback">
+					
+					                        </div>
+					                    </div>
+					                    
+					                   
+					                    
+					                    
+					                    
+					                    
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="Descripción">Descripción</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="Descripción" placeholder="Nit" maxlength="9" -->
+				<!-- 	                               autofocus="autofocus" required="required"/> th:field="*{nit}" th:value="${nit}"  -->
+					                        	
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+					                    
+					                    
+					                    
+					                    
+					                    
+				<!-- 	                </div> -->
+				<!-- 	                <div class="form-row"> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="direccion">Dirección</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="direccion"/> th:field="*{direccion}" th:value="${direccion} -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+					                    
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="telefono">Telefono</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="telefono" />  th:field="*{telefono}" th:value="${telefono}"  -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="estado">Estado</label> -->
+				<!-- 	                        <select id="estado" class="form-control" >  th:field="*{estado}"  -->
+				<!-- 	                            <option value="">Selecione...</option> -->
+				<!-- 	                            <option th:value="Activo" th:text="Activo"></option> -->
+				<!-- 	                            <option th:value="Inactivo" th:text="Inactivo"></option> -->
+				<!-- 	                        </select> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+				<!-- 	                        </div> -->
+				<!-- 	                	</div> -->
+				<!-- 	                </div> -->
+				<!-- 	                <div class="form-row"> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="encargado_general">Encargado General</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="encargado_general" />th:field="*{encargado_general}" th:value="${encargado_general}" -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="correo_enc_general">Correo</label> -->
+				<!-- 	                        <input type="email" class="form-control" id="correo_enc_general" /> th:field="*{correo_enc_general}" th:value="${correo_enc_general}" -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="telefono_enc_general">Telefono</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="telefono_enc_general" /> th:field="*{telefono_enc_general}" th:value="${telefono_enc_general}" -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                </div> -->
+				<!-- 	                <div class="form-row"> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="encargado1">Encargado 1</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="encargado_uno" />  th:field="*{encargado_uno}" th:value="${encargado_uno}" -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+					                    
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="telefono1">Telefono</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="telefono_enc_uno" />  th:field="*{telefono_enc_uno}" th:value="${telefono_enc_uno}" -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                 </div> -->
+					         
+				<!-- 	                 <div class="form-row"> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="encargado2">Encargado 2</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="encargado_dos" th:field="*{encargado_dos}" th:value="${encargado_dos}"/> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="correo2">Correo</label> -->
+				<!-- 	                        <input type="email" class="form-control" id="correo_enc_dos" th:field="*{correo_enc_dos}" th:value="${correo_enc_dos}"/> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="telefono2">Telefono</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="telefono_enc_dos" th:field="*{telefono_enc_dos}" th:value="${telefono_enc_dos}"/> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                  </div> -->
+				<!-- 	                  <div class="form-row"> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="encargado3">Encargado 3</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="encargado_tres" th:field="*{encargado_tres}" th:value="${encargado_tres}"/> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="correo3">Correo</label> -->
+				<!-- 	                        <input type="email" class="form-control" id="correo_enc_tres" th:field="*{correo_enc_tres}" th:value="${correo_enc_tres}"/> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+					
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+				<!-- 	                    <div class="form-group col-md-6"> -->
+				<!-- 	                        <label for="telefono3">Telefono</label> -->
+				<!-- 	                        <input type="text" class="form-control" id="telefono_enc_tres" th:field="*{telefono_enc_tres}" th:value="${telefono_enc_tres}"/> -->
+				<!-- 	                        <div class="invalid-feedback"> -->
+				<!-- 	                        </div> -->
+				<!-- 	                    </div> -->
+					                 </div>
+					                 	                    
+				
+					                
+					              
+					      <!--    <input type="hidden" id="id" name="id" value=""/>
+					                <button type="submit" class="btn btn-primary btn-sm">Agregar</button> -->
+					                  <button class="btn btn-lg btn-primary btn-block" type="submit">
+											<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Agregar
+										</button>
+					            </form>
+				            </div>
+				        </div>
+				    </div>
+				  </div>  
+			    </section>
+	    </div>
+	
+</body>
+</html>		
