@@ -8,32 +8,6 @@ import groovyjarjarpicocli.CommandLine.Model;
 @Controller
 public class loginPQR {
 	
-	@GetMapping("/login") 
-	public String verLogin(Model model) {
-//			model.addAttribute("userSkillnet", new UserCredential());
-//			model.addAttribute("error", error);
-//			model.addAttribute("logout", logout);
-		return "login";
-	}
-	
-	
-	@GetMapping("/Inicio") 
-	public String verInicio(Model model) {
-//			model.addAttribute("userSkillnet", new UserCredential());
-//			model.addAttribute("error", error);
-//			model.addAttribute("logout", logout);
-		return "Inicio";
-	}
-	
-	
-	@GetMapping("/reclamos") 
-	public String verReclamos(Model model) {
-//			model.addAttribute("userSkillnet", new UserCredential());
-//			model.addAttribute("error", error);
-//			model.addAttribute("logout", logout);
-		return "PQR/inicioPqr";
-	}
-	
 	
 	@GetMapping("/opciones") 
 	public String verQuejas(Model model) {

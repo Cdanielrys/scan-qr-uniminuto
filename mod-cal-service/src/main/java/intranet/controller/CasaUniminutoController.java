@@ -28,7 +28,7 @@ public class CasaUniminutoController {
 			System.out.println("Parameters ( "+ casa.getNombre() +" - " + casa.getPorcentaje() + " )");
 			service.addClientes(casa);
 			System.out.println("Despues service ( "+ casa.getNombre() +" - " + casa.getPorcentaje() + " )");
-//			service.addClientes(casa);			
+			service.addClientes(casa);			
 		}else {
 			
 		}
@@ -43,23 +43,4 @@ public class CasaUniminutoController {
 		return "SCANQR/opciones";
 	}
 	
-	
-//	@GetMapping("/addCliente")
-//	public String addCliente(@ModelAttribute(name="cliente") Clientes cliente, Model model) {
-//
-//		if (clientesService.findClientesById(cliente.getNit()).getNit()!=cliente.getNit() || 0==cliente.getNit() ) {
-//			
-//			if (null != clientesService.addClientes(cliente)) {	
-//				model.addAttribute("resul", 1);
-//			} else {
-//				model.addAttribute("resul", 0);
-//			}
-//		} else {
-//			if (null != clientesService.updateClientes(cliente)) {
-//				
-//				model.addAttribute("resul", 1);
-//			} else {
-//				model.addAttribute("resul", 0);
-//			}
-//		}
 }
