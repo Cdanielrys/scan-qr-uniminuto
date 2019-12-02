@@ -12,6 +12,7 @@ public class IntranetApplication {
 		SpringApplication.run(IntranetApplication.class, args);
 	}
 	
+	
 	@Bean
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
