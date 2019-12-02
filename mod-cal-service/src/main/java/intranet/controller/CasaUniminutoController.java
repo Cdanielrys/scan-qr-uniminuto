@@ -18,7 +18,7 @@ public class CasaUniminutoController {
 	@PostMapping("/addEncuestaCU")
 	public String addPorcentajeCasaUniminuto(@ModelAttribute(name="casa") CasaUniminuto casa) {
 		if (casa != null) {
-			String casauni="casa-uniminuto";
+			String casauni="";
 			casa.setNombre(casauni);
 			System.out.println("el objeto no es null");
 			System.out.println(casa.toString());
